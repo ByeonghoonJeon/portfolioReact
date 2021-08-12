@@ -9,8 +9,12 @@ const MenuBar = (props) => {
       <p className="secondTitle">Explore his interesting portfolio</p>
       <Container>
         <Row>
-          <Col xs={6}>Gallery</Col>
-          <Col xs={6}>Github</Col>
+          <Col className="menu" xs={6}>
+            Gallery
+          </Col>
+          <Col className="menu" xs={6}>
+            Github
+          </Col>
         </Row>
       </Container>
     </div>

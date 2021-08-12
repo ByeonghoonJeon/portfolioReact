@@ -2,7 +2,6 @@
   text-align: center;
   background-color: #933335;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -14,23 +13,29 @@
 .date {
   color: #fb5856;
   font-size: 3rem;
+  margin-bottom: 5rem;
+  padding-top: 7rem;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 7rem;
   margin-bottom: 0;
 }
 
 .secondTitle {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 0;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .footer {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   color: rgb(190, 188, 188);
-  margin-top: 5rem;
+  margin-top: 10rem;
+}
+
+.menu {
+  font-size: 5rem;
 }

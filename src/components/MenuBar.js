@@ -1,12 +1,9 @@
 import React from "react";
-
 import { Container, Col, Row } from "reactstrap";
 
-const MenuBar = (props) => {
+const MenuBar = () => {
   return (
     <div>
-      <h2 className="title">Nathan Jeon</h2>
-      <p className="secondTitle">Explore his interesting portfolio</p>
       <Container>
         <Row>
           <Col className="menu" xs={6}>

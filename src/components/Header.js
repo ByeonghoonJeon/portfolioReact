@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import MenuBar from "./MenuBar";
-
 class Header extends Component {
   render() {
     const myCurrentTime = new Date().toLocaleString();
@@ -40,7 +38,8 @@ class Header extends Component {
         <p className="date">
           Good day! today is {myDay()} {new Date().getDate()}, {myMonth()}
         </p>
-        <MenuBar />
+        <h2 className="title">Nathan Jeon</h2>
+        <p className="secondTitle">Explore his interesting portfolio</p>
       </div>
     );
   }

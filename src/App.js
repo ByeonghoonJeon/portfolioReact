@@ -1,17 +1,26 @@
-import logo from "./logo.svg";
+import React, { Component } from "react";
 import "./App.css";
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
+import {
+  Switch,
+  Route,
+  Redirect,
+  withRouter,
+  BrowserRouter,
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      <div className="App">
-        <Header />
-        <Footer />
-      </div>
-    </div>
-  );
+import Home from "../src/components/Home";
+import Gallery from "../src/components/Gallery";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Gallery />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

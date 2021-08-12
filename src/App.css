@@ -10,6 +10,19 @@
   font-family: "Staatliches", cursive;
 }
 
+.cards {
+  align-items: center;
+  justify-content: center;
+}
+
+.font1 {
+  color: #933335;
+}
+
+.shadow1 {
+  box-shadow: 0 0 10px gray;
+}
+
 .date {
   color: #fb5856;
   font-size: 3rem;
@@ -34,6 +47,7 @@
   font-size: 1rem;
   color: rgb(190, 188, 188);
   margin-top: 10rem;
+  margin-bottom: 0;
 }
 
 .menu {

@@ -21,17 +21,22 @@ const CardRender = ({ portfolioList }) => {
           className="bc"
           top
           src={portfolioList.image}
-          alt={portfolioList.name}
+          alt={portfolioList.category}
         />
         <CardBody className="bc">
           <CardTitle className="font1" tag="h5">
-            {portfolioList.title}
+            {portfolioList.category}
           </CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">
-            {portfolioList.subtitle}
+            {portfolioList.description}
           </CardSubtitle>
-          <CardText className="font1">{portfolioList.description}</CardText>
-          <Button>To the web</Button>
+          <CardText className="font1">{portfolioList.subtitle}</CardText>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">
+            {portfolioList.languages}
+          </CardSubtitle>
+          <a href={portfolioList.address}>
+            <Button>To the web</Button>
+          </a>
         </CardBody>
       </Card>
     </div>

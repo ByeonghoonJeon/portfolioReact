@@ -20,7 +20,7 @@
 }
 
 .shadow1 {
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .date {

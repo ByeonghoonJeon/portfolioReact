@@ -5,24 +5,14 @@ import Gallery from "./Gallery";
 import Home from "./Home";
 
 const MenuBar = () => {
-  const HomePage = () => {
-    return <Home />;
-  };
-  const Gallery = () => {
-    return <Gallery />;
-  };
   return (
     <div>
       <Container>
         <Row className="menubar">
           <Col className="menu" xs={6}>
-            <Switch>
-              <Route path="/home" component={HomePage} />
-              <Link to="/gallery" className="link">
-                Gallery
-              </Link>
-              <Route path="/gallery" component={Gallery} />
-            </Switch>
+            <Link to="/gallery" className="link">
+              Gallery
+            </Link>
           </Col>
           <Col className="menu" xs={6}>
             <a

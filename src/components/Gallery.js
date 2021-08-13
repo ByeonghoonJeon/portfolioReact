@@ -57,9 +57,13 @@ function Gallery() {
     <div>
       <Header />
       <h1 className="python">
-        <Link to="https://github.com/ByeonghoonJeon" className="link">
+        <a
+          href="https://github.com/ByeonghoonJeon"
+          className="link"
+          target="_blank"
+        >
           [[ Click here to python program portfolio ]]
-        </Link>
+        </a>
       </h1>
       <Row className="cards">{cardMaking}</Row>
       <Footer />

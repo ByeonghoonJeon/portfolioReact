@@ -16,7 +16,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Home />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/gallery">
+              <Gallery />
+            </Route>
+          </Switch>
         </div>
       </BrowserRouter>
     );

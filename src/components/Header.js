@@ -36,7 +36,7 @@ class Header extends Component {
     }
     return (
       <div className="header">
-        <Link to="/home" className="link">
+        <Link to="/" className="link">
           Home
         </Link>
         <p className="date">

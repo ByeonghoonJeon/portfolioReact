@@ -35,7 +35,7 @@ const CardRender = ({ portfolioList }) => {
           <CardSubtitle tag="h6" className="mb-2 text-muted">
             {portfolioList.languages}
           </CardSubtitle>
-          <a href={portfolioList.address}>
+          <a href={portfolioList.address} target="_blank">
             <Button>To the web</Button>
           </a>
         </CardBody>

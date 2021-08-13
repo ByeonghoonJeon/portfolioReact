@@ -23,11 +23,15 @@
   box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
+.header {
+  padding-top: 3rem;
+}
+
 .date {
   color: #fb5856;
   font-size: 3rem;
   margin-bottom: 5rem;
-  padding-top: 7rem;
+  margin-top: 3rem;
 }
 
 .title {
@@ -52,4 +56,17 @@
 
 .menu {
   font-size: 5rem;
+}
+
+.link {
+  color: #ff7d26 !important;
+}
+
+.link:hover {
+  color: #ff5b0f !important;
+}
+
+.python {
+  margin-bottom: 5rem;
+  margin-top: 0;
 }

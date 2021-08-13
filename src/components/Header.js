@@ -35,11 +35,14 @@ class Header extends Component {
     }
     return (
       <div className="header">
+        <a href="/" className="link">
+          Home
+        </a>
         <p className="date">
           Good day! today is {myDay()} {new Date().getDate()}, {myMonth()}
         </p>
         <h2 className="title">Nathan Jeon</h2>
-        <p className="secondTitle">Explore his interesting portfolio</p>
+        <p className="secondTitle mb-3">Explore his interesting portfolio</p>
       </div>
     );
   }

@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div>
         <p className="footer">
-          Copyright {currentYear} Byeonghoon Jeon(Nathan Jeon)
+          Copyright © {currentYear} Byeonghoon Jeon(Nathan Jeon)
         </p>
       </div>
     );

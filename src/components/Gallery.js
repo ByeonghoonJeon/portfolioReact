@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import portfolioList from "../shared/portfolio.js";
+import { Link } from "react-router-dom";
 
 import {
   Card,
@@ -56,10 +57,9 @@ function Gallery() {
     <div>
       <Header />
       <h1 className="python">
-        {" "}
-        <a href="https://github.com/ByeonghoonJeon" className="link">
+        <Link to="https://github.com/ByeonghoonJeon" className="link">
           [[ Click here to python program portfolio ]]
-        </a>
+        </Link>
       </h1>
       <Row className="cards">{cardMaking}</Row>
       <Footer />

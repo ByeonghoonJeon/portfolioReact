@@ -1,16 +1,37 @@
 import React from "react";
 import { Container, Col, Row } from "reactstrap";
+import { Route, Router, Switch, Link } from "react-router-dom";
+import Gallery from "./Gallery";
+import Home from "./Home";
 
 const MenuBar = () => {
+  const HomePage = () => {
+    return <Home />;
+  };
+  const Gallery = () => {
+    return <Gallery />;
+  };
   return (
     <div>
       <Container>
-        <Row>
+        <Row className="menubar">
           <Col className="menu" xs={6}>
-            Gallery
+            <Switch>
+              <Route path="/home" component={HomePage} />
+              <Link to="/gallery" className="link">
+                Gallery
+              </Link>
+              <Route path="/gallery" component={Gallery} />
+            </Switch>
           </Col>
           <Col className="menu" xs={6}>
-            Github
+            <a
+              href="https://github.com/ByeonghoonJeon"
+              className="link"
+              target="_blank"
+            >
+              Github
+            </a>
           </Col>
         </Row>
       </Container>

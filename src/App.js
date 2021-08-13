@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Gallery />
+          <Home />
         </div>
       </BrowserRouter>
     );

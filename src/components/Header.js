@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 class Header extends Component {
   render() {
     const myCurrentTime = new Date().toLocaleString();
@@ -35,9 +36,9 @@ class Header extends Component {
     }
     return (
       <div className="header">
-        <a href="/" className="link">
+        <Link to="/home" className="link">
           Home
-        </a>
+        </Link>
         <p className="date">
           Good day! today is {myDay()} {new Date().getDate()}, {myMonth()}
         </p>

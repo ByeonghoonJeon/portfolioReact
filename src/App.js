@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import {
-  Switch,
-  Route,
-  Redirect,
-  withRouter,
-  BrowserRouter,
-} from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "../src/components/Home";
 import Gallery from "../src/components/Gallery";

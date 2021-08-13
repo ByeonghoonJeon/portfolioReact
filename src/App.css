@@ -10,6 +10,26 @@
   font-family: "Staatliches", cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 5rem !important;
+  }
+  .secondTitle {
+    font-size: 1.2rem !important;
+  }
+  .menu {
+    font-size: 3rem !important;
+  }
+
+  .home {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 2rem !important;
+  }
+}
+
 .cards {
   align-items: center;
   justify-content: center;
@@ -37,6 +57,7 @@
 .title {
   font-size: 7rem;
   margin-bottom: 0;
+  text-shadow: 5px 5px black;
 }
 
 .secondTitle {

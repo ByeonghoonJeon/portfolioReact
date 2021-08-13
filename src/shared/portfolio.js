@@ -1,9 +1,9 @@
-import Image1 from "../images/image_1.png";
-import Image2 from "../images/image_2.png";
-import Image3 from "../images/image_3.png";
-import Image4 from "../images/image_4.png";
-import Image5 from "../images/image_5.png";
-import Img from "../images/img.png";
+import Image1 from "./images/image_1.png";
+import Image2 from "./images/image_2.png";
+import Image3 from "./images/image_3.png";
+import Image4 from "./images/image_4.png";
+import Image5 from "./images/image_5.png";
+import Img from "./images/img.png";
 
 export default [
   {

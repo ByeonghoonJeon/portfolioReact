@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import portfolioList from "../shared/portfolio.js";
 import { Link } from "react-router-dom";
+import { FadeTransform, Fade, Stagger } from "react-animation-components";
 
 import {
   Card,
@@ -18,29 +19,38 @@ import {
 const CardRender = ({ portfolioList }) => {
   return (
     <div>
-      <Card className="shadow1">
-        <CardImg
-          className="bc"
-          top
-          src={portfolioList.image}
-          alt={portfolioList.category}
-        />
-        <CardBody className="bc">
-          <CardTitle className="font1" tag="h5">
-            {portfolioList.category}
-          </CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">
-            {portfolioList.description}
-          </CardSubtitle>
-          <CardText className="font1">{portfolioList.subtitle}</CardText>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">
-            {portfolioList.languages}
-          </CardSubtitle>
+      <FadeTransform
+        in
+        transformProps={{
+          exitTransform: "scale(0.5) translateY(-50%)",
+        }}
+      >
+        <Card className="shadow1 cardHover">
           <a href={portfolioList.address} target="_blank">
-            <Button>To the web</Button>
+            <CardImg
+              top
+              src={portfolioList.image}
+              alt={portfolioList.category}
+            />
           </a>
-        </CardBody>
-      </Card>
+          <CardBody>
+            <CardTitle className="font1" tag="h5">
+              {portfolioList.category}
+            </CardTitle>
+            <CardSubtitle tag="h6" className="mb-2 text-muted">
+              {portfolioList.description}
+            </CardSubtitle>
+            <CardText className="font1">{portfolioList.subtitle}</CardText>
+            <CardSubtitle tag="h6" className="mb-2 text-muted">
+              {portfolioList.languages}
+            </CardSubtitle>
+            <a href={portfolioList.address} target="_blank">
+              <Button>To the web</Button>
+            </a>
+          </CardBody>
+        </Card>
+        <br />
+      </FadeTransform>
     </div>
   );
 };
